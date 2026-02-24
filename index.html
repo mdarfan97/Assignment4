@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body> 
    <header class="w-[80%] mx-auto">
@@ -25,6 +26,34 @@
     </div>
    </header> 
    <hr class="my-5 w-[80%] mx-auto">
-   
+   <main class="w-[80%] mx-auto">
+       <div>
+        <button class="bg-blue-500 text-white px-8 py-2" id="allfilterbtn">All</button>
+        <button class="bg-white-500 px-4 py-2" id="interviewfilterbtn">Interview</button>
+        <button class="bg-white-500 px-4 py-2" id="rejectfilterbtn">Rejected</button>
+    </div>
+    <section class="allcard">
+        <div class="card flex justify-between">
+            <div class="space-y-6">
+                <div>
+                    <p>Mobile First Corp</p>
+                    <p>React Native Developer</p>
+                </div>
+                <div>
+                    <p>Remote . Full-time . $130,000 - $175,000</p>
+                </div>
+                <div>NOT APPLIED</div>
+                <div>Build cross-platform mobile applications using React Native.Work on products used by millions of users worldwide</div>
+                <div>
+                    <button class="interview-btn">Interview</button>
+                    <button class="reject-btn">Rejected</button>
+                </div>
+            </div>
+            <div class="btn-delete"><i class="fa-regular fa-trash-can"></i></div>
+        </div>
+
+    </section>
+       
+   </main>
 </body>
 </html>
