@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body> 
-     
+   <header class="w-[80%] mx-auto">
+    <h1 class="text font-bold">Job Application Tracker</h1>
+    <div class="grid grid-cols-3 gap-8">
+        <div class="bg-yellow-200 p-4"> 
+            <p>Total</p>
+            <p id="totalcnt">8</p>
+           
+        </div>
+        <div class="bg-green-200 p-4">
+            <p>Interview</p>
+            <p id="interviewcnt">0</p></div>
+        <div class="bg-gray-200 p-4">
+            <p id="rejectcnt">Rejected</p>
+            <p>0</p>
+        </div>
+    </div>
+   </header>  
 </body>
 </html>
