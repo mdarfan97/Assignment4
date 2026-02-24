@@ -9,7 +9,7 @@
 </head>
 <body> 
    <header class="w-[80%] mx-auto">
-    <h1 class="text font-bold">Job Application Tracker</h1>
+    <h1 class="text font-bold mb-2">Job Application Tracker</h1>
     <div class="grid grid-cols-3 gap-8">
         <div class="bg-yellow-200 p-4"> 
             <p>Total</p>
@@ -27,13 +27,13 @@
    </header> 
    <hr class="my-5 w-[80%] mx-auto">
    <main class="w-[80%] mx-auto">
-       <div>
+       <div class="mb-5">
         <button class="bg-blue-500 text-white px-8 py-2" id="allfilterbtn">All</button>
         <button class="bg-white-500 px-4 py-2" id="interviewfilterbtn">Interview</button>
         <button class="bg-white-500 px-4 py-2" id="rejectfilterbtn">Rejected</button>
     </div>
     <section class="allcard">
-        <div class="card flex justify-between">
+        <div class="card flex justify-between border p-8">
             <div class="space-y-6">
                 <div>
                     <p>Mobile First Corp</p>
@@ -41,15 +41,15 @@
                 </div>
                 <div>
                     <p>Remote . Full-time . $130,000 - $175,000</p>
-                </div>
-                <div>NOT APPLIED</div>
-                <div>Build cross-platform mobile applications using React Native.Work on products used by millions of users worldwide</div>
-                <div>
-                    <button class="interview-btn">Interview</button>
-                    <button class="reject-btn">Rejected</button>
+                    </div> 
+                <div><p class="bg-gray-200 px-4 py-2 w-[16%]">NOT APPLIED</p>
+                Build cross-platform mobile applications using React Native.Work on products used by millions of users worldwide</div>
+                <div class="flex gap-3">
+                    <button class="interview-btn text-green-700 px-4 py-2 border">INTERVIEW</button>
+                    <button class="reject-btn text-red-700 px-4 py-2 border">REJECTED</button>
                 </div>
             </div>
-            <div class="btn-delete"><i class="fa-regular fa-trash-can"></i></div>
+            <div class="btn-delete px-6 py-4"><i class="fa-regular fa-trash-can"></i></div>
         </div>
 
     </section>
