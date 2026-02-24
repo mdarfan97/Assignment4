@@ -13,26 +13,29 @@
     <div class="grid grid-cols-3 gap-8">
         <div class="bg-slate-50 p-4"> 
             <p>Total</p>
-            <p id="totalcnt">8</p>
-           
+            <p id="total">0</p>     
         </div>
         <div class="bg-slate-50 p-4">
             <p>Interview</p>
-            <p id="interviewcnt">0</p></div>
+            <p id="interviewcount" class="text-green-700">0</p></div>
         <div class="bg-slate-50 p-4">
-            <p id="rejectcnt">Rejected</p>
-            <p>0</p>
+            <p>Rejected</p>
+            <p id="rejectcount" class="text-red-700">0</p>
         </div>
     </div>
+    
    </header> 
    <hr class="my-5 w-[80%] mx-auto">
+   <div class="w-[80%] mx-auto flex justify-between mb-4"><h1>Available Jobs</h1>
+   <p>8 jobs</p>
+   </div>
    <main class="w-[80%] mx-auto">
        <div class="mb-5 flex gap-3">
-        <button class="bg-blue-500 text-white px-8 py-2" id="allfilterbtn">All</button>
-        <button class="bg-slate-100 px-4 py-2 " id="interviewfilterbtn">Interview</button>
-        <button class="bg-slate-100 px-4 py-2" id="rejectfilterbtn">Rejected</button>
+        <button onclick="toggleStyle('allfilterbtn')" class="bg-blue-500 text-white px-8 py-2" id="allfilterbtn">All</button>
+        <button onclick="toggleStyle('interviewfilterbtn')"class="bg-slate-100 px-4 py-2 " id="interviewfilterbtn">Interview</button>
+        <button onclick = "toggleStyle('rejectfilterbtn')"class="bg-slate-100 px-4 py-2" id="rejectfilterbtn">Rejected</button>
     </div>
-    <section class="allcard">
+    <section id="allcard" class="space-y-5">
         <div class="card flex justify-between border p-8">
             <div class="space-y-6">
                 <div>
@@ -181,5 +184,6 @@
     </section>
        
    </main>
+   <script src="script.js"></script>
 </body>
 </html>
